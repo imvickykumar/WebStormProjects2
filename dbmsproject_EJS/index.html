@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button class="btn btn-success">Install</button>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+// Client Side Ajax Script
+<script>
+    $('button').click(function () {
+        $.post('/page', {data: 'blah'}, function (data) {
+            console.log(data);
+        });
+    }, 'json');
+</script>
+
+</body>
+</html>
